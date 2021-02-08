@@ -20,8 +20,14 @@
   <link rel="stylesheet" href="css/framework.css">
 </head>
 <body>
-
-
+<div class="container" id="app">
+  <!-- collego funzione -->
+    <button @click="getEmail" >Click to watch the mail list</button>
+  <!-- ciclo -->
+    <ol v-for="email in emailList">
+      <li>{{email}}</li>
+    </ol>
+</div>
 
   <script src="js/script.js"></script>
 </body>
